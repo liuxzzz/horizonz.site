@@ -2,6 +2,8 @@
 interface Props {
 	title: string;
 }
+import Navigation from '../components/Navigation.astro';
+
 
 const { title } = Astro.props;
 ---
@@ -17,6 +19,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Navigation />
 		<slot />
 	</body>
 </html>
@@ -34,18 +37,6 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
 		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
 	}
 </style>
