@@ -1,14 +1,12 @@
 ---
 import "../styles/style.css";
 import ThemeIcon from "./ThemeIcon.astro";
-// import NavigationButton from "./NavigationButton";
+import Navigation from "./Navigation";
 ---
 
 <div class="nav-links">
   <!-- <NavigationButton name="Home" path="/" client:load /> -->
   <!-- <NavigationButton name="About" path="/about" client:load /> -->
-
-  <a href="/blog/">博客</a>
-
+  <Navigation />
   <ThemeIcon />
 </div>

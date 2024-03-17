@@ -570,6 +570,22 @@ a.button:active {
 
 .nav-item-outer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  color: var(--navbar-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-item-outer a {
+  display: flex;
+  color: var(--navbar-color);
+  justify-content: center;
   align-items: center;
 }
 
@@ -578,22 +594,6 @@ a.button:active {
   width: 16px;
   min-height: 16px;
   min-width: 16px;
-}
-
-.navigation a.item,
-.navigation button.item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.25rem;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--navbar-color);
-  padding: 0.3rem 0.35rem;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  transition: transform 0.2s ease-in-out;
 }
 
 .navigation a.item.brand {
